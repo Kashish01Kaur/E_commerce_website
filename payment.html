@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaymentGateway</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body id="paybg">
+    
+    <form id="paymentForm">
+        <h1>Select Payment Option</h1>
+        <div>
+          <input type="radio" id="cash" name="payment" value="cash" required>
+          <label for="cash">Cash on Delivery</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="card" name="payment" value="card">
+          <label for="card">Credit/Debit Card</label>
+        </div>
+      
+        <div>
+          <input type="radio" id="upi" name="payment" value="upi">
+          <label for="upi">UPI Payment</label>
+        </div>
+         
+        <h3>Total Price: <span id="totalPrice"></span></h3>
+        <button class=" btn-primary,
+        col-12,
+        mx-auto,
+        bt-auto,
+        pink-btn" type="button" onclick="submitPayment()">Pay Now</button>
+    </form>
+  
+    <script src="payment.js"></script>
+</body>
+
+</html>
